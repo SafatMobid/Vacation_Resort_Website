@@ -1,0 +1,65 @@
+.background 
+{
+    background-color: rgb(217, 201, 208);
+       /*Second_BGColor_Maybe 242, 233, 220 */
+       /* Need to turn text Black for it though */
+}
+
+.centerPosition
+{
+    position: relative;
+    width: 270px;
+    height: 120px;
+    padding: 1rem;
+    margin:auto;
+}
+
+.navbar_middle 
+{
+    position: relative;
+    width: 400px;
+    margin-left: 26rem;
+}
+
+.navbar_end
+{
+    position: relative;
+    width: 375px;
+    margin-left: 23rem;
+}
+
+.navbar-brand
+{
+    padding-left: 2rem;
+    font-size: 175%; 
+    font-weight: 300;
+}
+
+.dropdown-menu
+{
+    background-color: rgb(217, 201, 208);
+}
+
+.carousel
+{
+    padding-bottom: 1rem;
+}
+.carousel-item {
+    max-height: 75%;
+    max-width: 1350px;
+}
+
+.mainHeading
+{
+    text-align: center;
+    padding-bottom: 1em;
+    font-weight: 300;
+    font-size: 225%; 
+}
+
+.baseText
+{
+    text-align: center;
+    font-weight: 300;
+    padding-top: 0.1rem;
+}
