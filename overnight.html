@@ -9,7 +9,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/overnight.css">
 
-  <title>Overnight Rooms</title>
+  <title>Rooms</title>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="overnight.html"></a>
+                  <a class="nav-link" href="overnight.html">Rooms</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Features</a>
@@ -67,18 +67,115 @@
       </header>
     </div>
 
-    <main>
+    <div> <!--Heading + Heading Text  -->
         <h1 class="mainHeading"> Yume Resort Accomadations </h1>
-            <h4 class="underHeading">Embracing traditional Japanese style with a modern approach</h4>
-            <h4 class="underHeading">Our Suites offer elegant and timeless simplicity</h4>
+        <h4 class="underHeading">Embracing traditional Japanese style with a modern approach</h4>
+        <h4 class="underHeading">Our Suites offer elegant and timeless simplicity</h4>
+    </div>
 
-        <div class="container-fluid">
+    <main>
+       
+        <h2 class="mainHeading" style="padding-top: 1em;">Reserve Room</h2> <!-- Heading for room section -->
+        
+        <form class="container"> <!-- Name and Email -->
             <div class ="col">
-                
+                <div class = "form1 mainHeading" style="padding-top:2em" >
+                  <label style="padding-right:5em; font-size:110%">  Name : <input class="name" type="text" id="name" name="name" value=""/></label>
+                    <label style="font-size:110%">Email: <input class="email" type="text" id="email" name="email" value=""/></label>
+                </div>
             </div>
-        </div>
+        </form>
+        
+        <div class="row align-items-md-stretch"> <!-- Whole page Structure -->
+            <div class="col-md-8">  <!-- Rooms Section -->
+              <div class="h-100 p-5 rounded-3">
+                <div class="container-fluid">
+                  <h1 class="heading pb-3 roomHeading">Rooms</h1>
+
+                  <div class="card mb-3 backgroundCard" style="width: 950px;"> <!-- King Room -->
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images/King Suite_XL.jpg" class="img rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title roomName" style="padding-left: 15px;">King Suite</h5>
+                          <p class="card-text" style="padding-left: 15px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text" style="padding-left: 15px;"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          <p style="padding-left: 15px;"><input type="radio" name="KingQueenTwin" id="kingRoom" value="yes" checked> Yes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3 backgroundCard" style="width: 950px;"> <!-- Queen Room  -->
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images/Queen Suite_XL.jpg" class="img rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title roomName" style="padding-left: 15px;">Queen Suite</h5>
+                          <p class="card-text" style="padding-left: 15px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text" style="padding-left: 15px;"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          <p style="padding-left: 15px;"><input type="radio" name="KingQueenTwin" id="queenRoom" value="yes"> Yes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3 backgroundCard" style="width: 950px;"> <!-- Twin Room -->
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images/Twin Suite_XL.jpg" class="img rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title roomName" style="padding-left: 15px;">Twin Suite</h5>
+                          <p class="card-text" style="padding-left: 15px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text" style="padding-left: 15px;"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          <p style="padding-left: 15px;"><input type="radio" name="KingQueenTwin" id="twinRoom" value="yes"> Yes</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+    
+        <div class="col-md-3 rightCol"> <!-- Reservation Column --> 
+            <div class="h-80 p-4 backgroundCard border rounded-3 sticky-top">
+              <h2 class="roomHeading">Reservation</h2>
+              <div class="container">
+                
+            <p>Check In Date: <input class=" m-2" type="date" id="checkinDate" name="checkinDate" value="date"></p>
+            <p>Number of Days (max 28): <input type="number" id="nightStay" name="nightStay" value="1" min="1" max="28"></p>
+            <p>Adults Staying: <input type="number" id="adultStay" name="adultStay" value="1" min="1" max="4"></p>
+            <p>Children Staying: <input type="number" id="childrenStay" name="childrenStay" value="0" min="0" max="4"></p>
+            <hr>
+            <h6 class="roomHeading">Discounts</h6>
+            <p><input type="radio" name="discount" id="senior"> AAA/Senior-Over 65 (10%)</p> 
+            <p><input type="radio" name="discount" id="military"> Military(20%)</p>
+            <hr>
+            <p id="room" class="roomHeading">The original room cost:</p>
+            <p id="discount" class="roomHeading"> The discount:</p>
+            <h6 id="discountRoom" class="roomHeading">Discounted room cost:</p>
+            <p id="tax" class="roomHeading">Taxes:</p>
+            <hr>
+            <p id="totalCost" class="roomHeading">Total:</p>
+
+            <div style="padding-top: 1em;">
+                <button id="calculateBtn" type="button">Estimate Total Cost</button>
+            </div>
 
 
+              </div>
+            </div>
+        </div>  
+    </div>
+        
 
     </main>
 
