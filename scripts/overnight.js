@@ -28,23 +28,26 @@ function init()
 
 function calculateBtnClick() 
 {
-    //let name=getElementById("name");
-    //let email=getElementById("email");
-    let kingRoom = document.getElementById("kingRoom").checked;
-    let queenRoom = document.getElementById("queenRoom").checked;
-    let twinRoom = document.getElementById("twinRoom").checked;
-    let checkinDate = document.getElementById("checkinDate");
+    //const name=getElementById("name");
+    //const email=getElementById("email");
+    const kingRoom = document.getElementById("kingRoom").checked;
+    const queenRoom = document.getElementById("queenRoom").checked;
+    const twinRoom = document.getElementById("twinRoom").checked;
+    const checkinDate = document.getElementById("checkinDate");
         let checkinMonth = checkinDate(checkinDate.getMonth()+1);
-        let checkinDay = checkinDate(checkinDate.getDay());
-    let nightStay = Number(document.getElementById("nightStay").value);
-    let adultStay = Number(document.getElementById("adultStay").value);
-    let childrenStay = Number(document.getElementById("childrenStay").value);
-    let seniorDiscount = document.getElementById("seniorDiscount").checked;
-    let militaryDiscount = document.getElementById("militaryDiscount").checked;
+        //let checkinDay = checkinDate(checkinDate.getDay());
+    const nightStay = Number(document.getElementById("nightStay").value);
+    const adultStay = Number(document.getElementById("adultStay").value);
+    const childrenStay = Number(document.getElementById("childrenStay").value);
+    const seniorDiscount = document.getElementById("seniorDiscount").checked;
+    const militaryDiscount = document.getElementById("militaryDiscount").checked;
 
-    let kingVal = 250 * nightStay
-    let queenVal = 250 * nightStay
-    let twinVal = 250 * nightStay
+    const kingVal = 150 * nightStay;
+    const kingValPeak = 250 * nightStay;
+    const queenVal = 150 * nightStay;
+    const queenValPeak = 250 * nightStay;
+    const twinVal = 210 * nightStay;
+    const twinValPeak = 350 * nightStay;
 
     if (kingRoom)
     {
